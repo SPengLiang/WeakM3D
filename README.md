@@ -1,11 +1,23 @@
 # WeakM3D
 
+<p align="center"> <img src='img/WeakM3D.png' align="center" height="300px"> </p>
+
+
 ## Introduction
 
 This is the PyTorch implementation of the paper WeakM3D: Towards Weakly Supervised Monocular 3D Object Detection, In ICLR'22, Liang Peng, Senbo Yan, Boxi Wu, Zheng Yang, Xiaofei He, and Deng Cai.
 
 [[paper]](https://arxiv.org/abs/2203.08332) 
 
+## Abstract
+Monocular 3D object detection is one of the most challenging tasks in 3D scene understanding. Due to the ill-posed nature of monocular imagery, existing monocular 3D detection methods highly rely on training with the manually annotated 3D box labels on the LiDAR point clouds.
+This annotation process is very laborious and expensive. 
+To dispense with the reliance on 3D box labels, in this paper we explore the weakly supervised monocular 3D detection.
+Specifically, we first detect 2D boxes on the image. 
+Then, we adopt the generated 2D boxes to select corresponding RoI LiDAR points as the weak supervision. 
+Eventually, we adopt a network to predict 3D boxes which can tightly align with associated RoI LiDAR points.
+This network is learned by minimizing our newly-proposed 3D alignment loss between the 3D box estimates and the corresponding RoI LiDAR points. 
+We will illustrate the potential challenges of the above learning problem and resolve these challenges by introducing several effective designs into our method.
 
 ## Overview
 - [Installation](#installation)
