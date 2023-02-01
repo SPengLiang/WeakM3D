@@ -1,0 +1,11 @@
+EXP_NAME : "Resnet34"
+NET_LAYER : 34
+
+TRAIN:
+    BATCH_SIZE: 8
+    WORKS: 4
+    SAMPLE_ROI_POINTS: 100
+
+    TRAIN_FILE: '/private/pengliang/WeakM3D_official/data/kitti/data_file/split/train.txt'
+    WEIGHT_FILE: '/private/pengliang/WeakM3D_official/data/kitti/data_file/kitti_3d_training_weight.txt'
+

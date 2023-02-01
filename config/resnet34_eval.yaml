@@ -1,0 +1,7 @@
+EXP_NAME : "Resnet34"
+
+NET_LAYER : 34
+RESTORE_PATH : "None" # Pretrained Model Path
+
+INFER:
+  WORKS: 16
